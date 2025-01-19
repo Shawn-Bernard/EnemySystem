@@ -16,6 +16,7 @@ namespace EnemySystem
             for(int i = 0; i < 5; i++)
             {
                 myGhost.Attack(1);
+                myGhost.takeDamage(1);
             }
             
             
