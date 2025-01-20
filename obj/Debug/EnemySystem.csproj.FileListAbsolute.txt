@@ -1,7 +1,0 @@
-C:\~Scripts\EnemySystem\bin\Debug\EnemySystem.exe.config
-C:\~Scripts\EnemySystem\bin\Debug\EnemySystem.exe
-C:\~Scripts\EnemySystem\bin\Debug\EnemySystem.pdb
-C:\~Scripts\EnemySystem\obj\Debug\EnemySystem.csproj.AssemblyReference.cache
-C:\~Scripts\EnemySystem\obj\Debug\EnemySystem.csproj.CoreCompileInputs.cache
-C:\~Scripts\EnemySystem\obj\Debug\EnemySystem.exe
-C:\~Scripts\EnemySystem\obj\Debug\EnemySystem.pdb

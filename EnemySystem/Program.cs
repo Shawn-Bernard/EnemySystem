@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace EnemySystem
 {
+    
     internal class Program
     {
         static void Main(string[] args)
@@ -13,20 +14,34 @@ namespace EnemySystem
             Skeleton mySkeleton = new Skeleton();
             Ghost myGhost = new Ghost();
             Boss myBoss = new Boss();
-            for(int i = 0; i < 5; i++)
+            Console.ForegroundColor = ConsoleColor.Blue;
+            Console.WriteLine("Skeleton:");
+            mySkeleton.Attack(5);
+            mySkeleton.takeDamage(10);
+            mySkeleton.Death();
+
+            Console.ForegroundColor = ConsoleColor.Magenta;
+            Console.WriteLine("Ghost:");
+            mySkeleton.Attack(10);
+            for (int i = 0; i < 3; i++)
             {
-                myGhost.Attack(1);
-                myGhost.takeDamage(1);
+                myGhost.takeDamage(15);
             }
-            
-            
+            myGhost.Death();
+            Console.ForegroundColor = ConsoleColor.Red;
+            Console.WriteLine("Boss:");
+            myBoss.Attack(20);
+            myBoss.takeDamage(5);
+            myBoss.Death();
+
+
             Console.ReadLine();
         }
     }
     public class Enemy
     {
         int health;
-        int damage;
+        public int Damage { get; set; }
 
         public int Health
         {
@@ -49,26 +64,24 @@ namespace EnemySystem
         }
         public virtual void Death()
         {
-            
+            Console.WriteLine("Oh, what a world! What a world!");
         }
     } 
     public class Skeleton: Enemy
     {
-        
+        //The skeleton is using the base methods so no need to override
     }
     public class Ghost: Enemy
     {
-        Random rng = new Random();
+        static Random rng = new Random();
 
         public override void Attack(int damage)
         {
             Console.WriteLine($"Ghost chop hit for {damage}");
-            
-
         }
         public override void takeDamage(int damage)
         {
-            int rngHit = rng.Next(0, 1);
+            int rngHit = rng.Next(2);
             if (rngHit == 0)
             {
                 base.takeDamage(damage);
@@ -78,37 +91,31 @@ namespace EnemySystem
                 Console.WriteLine($"the attack missed because its a ghost");
             }
         }
-        public override void Death()
-        {
-            base.Death();
-        }
     }
     public class Boss: Enemy
     {
+        
         Random rng = new Random();
         public override void Attack(int damage)
         {
-            int rngAttack = rng.Next(0, 3);
-            if (rngAttack == 0)
+            
+            for (int i = 0; i < 3; i++)
             {
-                Console.WriteLine("random attack 0");
+                int rngAttack = rng.Next(3);
+                if (rngAttack == 0)
+                {
+                    Console.WriteLine($"Slam hit for {damage} ");
+                }
+                else if (rngAttack == 1)
+                {
+                    Console.WriteLine($"Kick hit for {damage}");
+                }
+                else if (rngAttack == 2)
+                {
+                    Console.WriteLine($"Bat hit for {damage}");
+                }
             }
-            else if (rngAttack == 1)
-            {
-                Console.WriteLine("random attack 1");
-            }
-            else if (rngAttack == 2)
-            {
-                Console.WriteLine("random attack 2");
-            }
-        }
-        public override void takeDamage(int damage)
-        {
-            base.takeDamage(damage);
-        }
-        public override void Death()
-        {
-            base.Death();
+            
         }
     }
 }

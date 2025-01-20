@@ -1,0 +1,14 @@
+C:\~Scripts\EnemySystem\bin\Debug\EnemySystem.exe.config
+C:\~Scripts\EnemySystem\bin\Debug\EnemySystem.exe
+C:\~Scripts\EnemySystem\bin\Debug\EnemySystem.pdb
+C:\~Scripts\EnemySystem\obj\Debug\EnemySystem.csproj.AssemblyReference.cache
+C:\~Scripts\EnemySystem\obj\Debug\EnemySystem.csproj.CoreCompileInputs.cache
+C:\~Scripts\EnemySystem\obj\Debug\EnemySystem.exe
+C:\~Scripts\EnemySystem\obj\Debug\EnemySystem.pdb
+C:\Users\Shawn Bernard\Desktop\Coding\EnemySystem\bin\Debug\EnemySystem.exe.config
+C:\Users\Shawn Bernard\Desktop\Coding\EnemySystem\bin\Debug\EnemySystem.exe
+C:\Users\Shawn Bernard\Desktop\Coding\EnemySystem\bin\Debug\EnemySystem.pdb
+C:\Users\Shawn Bernard\Desktop\Coding\EnemySystem\obj\Debug\EnemySystem.csproj.AssemblyReference.cache
+C:\Users\Shawn Bernard\Desktop\Coding\EnemySystem\obj\Debug\EnemySystem.csproj.CoreCompileInputs.cache
+C:\Users\Shawn Bernard\Desktop\Coding\EnemySystem\obj\Debug\EnemySystem.exe
+C:\Users\Shawn Bernard\Desktop\Coding\EnemySystem\obj\Debug\EnemySystem.pdb
